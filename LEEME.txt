@@ -1,0 +1,25 @@
+REGALO DIGITAL DE MESARIO
+
+Archivos (todos deben estar en la misma carpeta):
+- index.html: estructura, flor (SVG) y carta.
+- style.css: diseño, animaciones y versión responsive.
+- script.js: cuenta regresiva, desbloqueo, corazones y música.
+- 305.mp3: la canción "305" de Shawn Mendes.
+
+FECHA DE APERTURA:
+16 de octubre de 2026 a las 00:00 (hora de Perú, UTC-5).
+
+PARA PROBAR:
+- Normal: abre index.html. Antes de la fecha muestra la cuenta regresiva.
+- Saltarse la espera: abre index.html?probar (con Live Server:
+  http://127.0.0.1:5500/index.html?probar).
+
+MÚSICA:
+El botón "Escuchar" reproduce 305.mp3 desde la misma carpeta. Se inicia al
+tocar el botón porque los navegadores bloquean la reproducción automática.
+
+IMPORTANTE:
+La fecha se controla con la hora del dispositivo. Para compartirlo por internet,
+sube TODOS los archivos (incluido 305.mp3) a GitHub Pages, Netlify o similar.
+La protección es visual, no de seguridad: alguien con conocimientos puede
+inspeccionar el código.

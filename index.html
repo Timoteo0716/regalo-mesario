@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff0f3" />
+  <title>Un detallito para ti ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <p class="eyebrow">HECHO CON TODO MI AMOR</p>
+    <div class="tiny-heart" aria-hidden="true">♡</div>
+    <h1>Para mi persona<br><em>favorita</em></h1>
+    <p class="intro">Preparé algo pequeñito para ti,<br>espero te guste mi codecaminosh.</p>
+
+    <!-- PANTALLA BLOQUEADA -->
+    <section id="lock-screen" class="glass-panel">
+      <div class="lock-icon" aria-hidden="true">♡</div>
+      <h2>Un regalo espera por ti</h2>
+      <p>Quiero que lo abras justo cuando comience nuestro día especial.</p>
+      <div id="countdown" class="countdown" aria-live="polite">
+        <div><strong id="hours">00</strong><span>horas</span></div>
+        <div><strong id="minutes">00</strong><span>minutos</span></div>
+        <div><strong id="seconds">00</strong><span>segundos</span></div>
+      </div>
+      <p id="lock-note" class="soft-note">Se desbloquea el 16 de este mes jeje.</p>
+    </section>
+
+    <!-- REGALO -->
+    <section id="gift-screen" class="gift hidden">
+      <p class="little-label">FELIZ MESARIO, MI AMOR</p>
+
+      <div class="flower-stage" role="img" aria-label="Una flor rosa que florece">
+        <div class="flower-halo" aria-hidden="true"></div>
+        <svg class="flower-svg" viewBox="0 0 200 270" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="petalOuter" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#cf3f6e"/>
+              <stop offset=".55" stop-color="#ee6c96"/>
+              <stop offset="1" stop-color="#ffbfd2"/>
+            </linearGradient>
+            <linearGradient id="petalInner" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#e45a86"/>
+              <stop offset="1" stop-color="#ffd6e2"/>
+            </linearGradient>
+            <radialGradient id="core" cx=".38" cy=".32" r=".75">
+              <stop offset="0" stop-color="#fff0b8"/>
+              <stop offset=".6" stop-color="#f6c254"/>
+              <stop offset="1" stop-color="#e49a2d"/>
+            </radialGradient>
+            <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#a6d8a4"/>
+              <stop offset="1" stop-color="#3f8a60"/>
+            </linearGradient>
+            <linearGradient id="stemGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#4c865e"/>
+              <stop offset="1" stop-color="#86be8b"/>
+            </linearGradient>
+
+            <!-- Pétalo grande y pétalo interior (apuntan hacia arriba desde el centro) -->
+            <g id="petal-outer">
+              <path d="M0 -6 C-27 -22 -25 -67 0 -83 C25 -67 27 -22 0 -6 Z" fill="url(#petalOuter)"/>
+              <path d="M0 -16 C-1 -34 -1 -52 0 -70" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <g id="petal-inner">
+              <path d="M0 -4 C-19 -15 -18 -47 0 -58 C18 -47 19 -15 0 -4 Z" fill="url(#petalInner)"/>
+              <path d="M0 -12 C0 -24 0 -36 0 -48" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1.6" stroke-linecap="round"/>
+            </g>
+          </defs>
+
+          <ellipse class="ground" cx="100" cy="254" rx="36" ry="5" fill="#a04c69" opacity=".14"/>
+
+          <g class="plant">
+            <!-- Tallo -->
+            <path class="stem" d="M100 100 C95 150 106 200 100 252" pathLength="1" fill="none" stroke="url(#stemGrad)" stroke-width="5" stroke-linecap="round"/>
+
+            <!-- Hojas -->
+            <g transform="translate(98.5 178)">
+              <path class="leaf leaf-left" d="M0 0 C-10 -4 -34 -4 -50 -24 C-26 -36 -6 -24 0 0 Z" fill="url(#leafGrad)"/>
+            </g>
+            <g transform="translate(101.5 204)">
+              <path class="leaf leaf-right" d="M0 0 C10 -4 34 -4 50 -24 C26 -36 6 -24 0 0 Z" fill="url(#leafGrad)"/>
+            </g>
+
+            <!-- Cabeza de la flor -->
+            <g transform="translate(100 100)">
+              <!-- capa exterior: 8 pétalos -->
+              <g transform="rotate(0)"><use class="petal" href="#petal-outer" style="--d:.20s"/></g>
+              <g transform="rotate(45)"><use class="petal" href="#petal-outer" style="--d:.30s"/></g>
+              <g transform="rotate(90)"><use class="petal" href="#petal-outer" style="--d:.40s"/></g>
+              <g transform="rotate(135)"><use class="petal" href="#petal-outer" style="--d:.50s"/></g>
+              <g transform="rotate(180)"><use class="petal" href="#petal-outer" style="--d:.60s"/></g>
+              <g transform="rotate(225)"><use class="petal" href="#petal-outer" style="--d:.70s"/></g>
+              <g transform="rotate(270)"><use class="petal" href="#petal-outer" style="--d:.80s"/></g>
+              <g transform="rotate(315)"><use class="petal" href="#petal-outer" style="--d:.90s"/></g>
+              <!-- capa interior: 8 pétalos desfasados -->
+              <g transform="rotate(22.5)"><use class="petal" href="#petal-inner" style="--d:1.00s"/></g>
+              <g transform="rotate(67.5)"><use class="petal" href="#petal-inner" style="--d:1.08s"/></g>
+              <g transform="rotate(112.5)"><use class="petal" href="#petal-inner" style="--d:1.16s"/></g>
+              <g transform="rotate(157.5)"><use class="petal" href="#petal-inner" style="--d:1.24s"/></g>
+              <g transform="rotate(202.5)"><use class="petal" href="#petal-inner" style="--d:1.32s"/></g>
+              <g transform="rotate(247.5)"><use class="petal" href="#petal-inner" style="--d:1.40s"/></g>
+              <g transform="rotate(292.5)"><use class="petal" href="#petal-inner" style="--d:1.48s"/></g>
+              <g transform="rotate(337.5)"><use class="petal" href="#petal-inner" style="--d:1.56s"/></g>
+              <!-- centro -->
+              <g class="core">
+                <circle r="14" fill="url(#core)"/>
+                <circle cx="-4" cy="-3" r="1.8" fill="#d98a25" opacity=".7"/>
+                <circle cx="4" cy="-4" r="1.5" fill="#d98a25" opacity=".7"/>
+                <circle cx="5" cy="3" r="1.8" fill="#d98a25" opacity=".7"/>
+                <circle cx="-3" cy="5" r="1.5" fill="#d98a25" opacity=".7"/>
+                <circle cx="0" cy="0" r="1.4" fill="#d98a25" opacity=".7"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <p class="flower-caption">Una flor para la niña que hace más bonito mi mundo.</p>
+
+      <div class="music-card">
+        <div id="music-disc" class="music-disc" aria-hidden="true">♫</div>
+        <div class="music-copy">
+          <strong>La canción de nuestro momentito</strong>
+          <span>“305” — Shawn Mendes</span>
+        </div>
+        <button id="music-toggle" class="music-button" type="button" aria-pressed="false">▶ Escuchar</button>
+      </div>
+
+      <audio id="love-song" preload="metadata">
+        <source src="305.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+      </audio>
+
+      <button id="open-letter" class="primary-button" type="button">Abrir mi cartita <span>♡</span></button>
+
+      <article id="letter" class="letter hidden">
+        <div class="letter-top">PARA TI, MI BEBÉ ♡</div>
+        <h2>Mi vida hermosa,</h2>
+        <p>Feliz mesario, mi Ovilla, mi Codecaminosh, mi amor y mi bebé. ❤️</p>
+        <p>
+          Quería darte un detallito hecho por mí, porque a veces siento que un simple
+          mensaje no alcanza para decirte lo mucho que significas para mí.
+          Esta flor es pequeñita, pero la preparé pensando en ti y con todo el cariño
+          que te tengo; por eso creo que es especial jeje.
+        </p>
+        <p>
+          Gracias por ser tú, por tus detalles, por tu forma de hacerme sonreír y por
+          todos esos momentos que poco a poco se vuelven recuerdos preciosos.
+          Me encanta tenerte en mi vida y seguir construyendo nuestra historia,
+          un día y un mesario a la vez.
+        </p>
+        <p>
+          Quiero seguir cuidando lo nuestro, escucharte, apoyarte y demostrarte con
+          hechos que mi cariño por ti es sincero. No prometo ser perfecto, pero sí
+          quiero seguir aprendiendo a amarte cada vez mejor, quiero ser tu mejor amigo
+          y compañero de vida, aunque resulte difícil, quiero hacerlo porque significas
+          todo para mí.
+        </p>
+        <p class="signature">Te amo muchísimo, mi amor y mi bebé. ♡</p>
+        <p class="final-line">Y si pudiera elegir otra vez, me encantaría volver a encontrarte.</p>
+        <div class="letter-footer">Con amor, Ovillon</div>
+      </article>
+
+      <p class="footer-note">Hecho por tu stich malo, para ti mi amorcito.</p>
+    </section>
+
+    <footer>un detallito de stich malo jeje, un stich malo que te ama musho ♡</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
